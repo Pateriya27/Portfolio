@@ -35,10 +35,17 @@ export default function AboutSection() {
             className="relative group hover-3d"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="w-full h-[400px] rounded-xl overflow-hidden border-4 border-primary/20 shadow-xl">
-              <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-white text-xl font-bold">
-                Your About Image
-              </div>
+            <div className="w-full h-[400px] rounded-xl overflow-hidden border-4 border-primary/20 shadow-xl relative">
+              <Image
+                src="/img/about.jpg"
+                alt="Harshit Pateriya - Full Stack Developer"
+                fill
+                style={{ objectFit: 'cover' }}
+                className="transition-transform duration-500 group-hover:scale-105"
+                priority
+              />
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
 
             {/* Decorative elements */}
@@ -85,7 +92,7 @@ export default function AboutSection() {
                   </div>
                   <h3 className="text-lg font-semibold">Experience</h3>
                 </div>
-                <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mb-2">2+</div>
+                <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mb-2">3+</div>
                 <div className="text-sm text-foreground/80">Projects Completed</div>
                 <div className="mt-3 w-full h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                   <motion.div 

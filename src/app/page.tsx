@@ -53,32 +53,32 @@ export default function Home() {
       
       {/* Navbar Component */}
       <Suspense fallback={<div className="h-16 bg-background animate-pulse" />}>
-        <Navbar />
+      <Navbar />
       </Suspense>
       
       {/* Main Sections */}
       <Suspense fallback={<div className="h-screen bg-background animate-pulse" />}>
-        <HeroSection />
+      <HeroSection />
       </Suspense>
 
       <Suspense fallback={<div className="h-screen bg-background animate-pulse" />}>
-        <AboutSection />
+      <AboutSection />
       </Suspense>
 
       <Suspense fallback={<div className="h-screen bg-background animate-pulse" />}>
-        <SkillsSection />
+      <SkillsSection />
       </Suspense>
 
       <Suspense fallback={<div className="h-screen bg-background animate-pulse" />}>
-        <ProjectsSection />
+      <ProjectsSection />
       </Suspense>
 
       <Suspense fallback={<div className="h-screen bg-background animate-pulse" />}>
-        <ContactSection />
+      <ContactSection />
       </Suspense>
 
       <Suspense fallback={<div className="h-32 bg-background animate-pulse" />}>
-        <Footer />
+      <Footer />
       </Suspense>
       
       {/* Back to top button */}

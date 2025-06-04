@@ -109,7 +109,7 @@ export default function HeroSection() {
             </motion.h3>
           </motion.div>
 
-          <motion.p 
+          {/* <motion.p 
             className="text-lg text-gray-700 dark:text-gray-300 max-w-md"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -117,7 +117,7 @@ export default function HeroSection() {
           >
             Motivated and organized Full Stack Developer with strong communication and time
             management skills. Experienced in both front-end and back-end technologies.
-          </motion.p>
+          </motion.p> */}
 
           <motion.div 
             className="flex flex-wrap gap-4 mt-6"
